@@ -1,7 +1,3 @@
-// Start with 'Click the button to choose a card'
-// On click, randomise a number between 1 and 52 and display the corresponding item as an alert
-// Provide answer with 'Choose again' button
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -13,15 +9,19 @@
   </style>
   </head>
 <body>
-
+ 
  
 
   <script>
-
+  //Start with 'Click the button to choose a card'
+  //On click, randomise a number between 1 and 52 and display the corresponding item as an alert
+  //Provide answer with 'Choose again' button
     alert ('Click the button to choose a card from the deck at random')
 
     let options = ["Card1", "Card2", "Card3"] 
-    let computerChoice = options[Math.floor(Math.random()*options.length)];
+    let cardChoice = options[Math.floor(Math.random()*options.length)];
+
+    console.log(cardChoice)
 
     //This might actually be better using a 'switch' statement
 
